@@ -24,13 +24,11 @@ addButtons.forEach(button => {
   });
 });
 
-// Remove product from cart
 function removeItem(index) {
   cart.splice(index, 1);
   updateCartUI();
 }
 
-// Update cart UI
 function updateCartUI() {
   cartItemsList.innerHTML = "";
   cart.forEach((item, index) => {
