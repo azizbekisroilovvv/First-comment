@@ -11,14 +11,12 @@ cartIcon.addEventListener("click", () => {
   cartDropdown.classList.toggle("hidden");
 });
 
-// Add product to cart
 addButtons.forEach(button => {
   button.addEventListener("click", () => {
     const productCard = button.parentElement;
     const name = productCard.querySelector("h4").textContent;
     const price = productCard.querySelector("p").textContent;
 
-    // Add to cart array
     cart.push({name, price});
     updateCartUI();
   });

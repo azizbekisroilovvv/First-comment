@@ -9,9 +9,9 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #2d2f4a;
-  color:red;
+  color:blue;
   padding: 10px;
-  position: sticky;
+  position: absolute;
   top: 0;
 }
 
